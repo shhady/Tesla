@@ -1,0 +1,558 @@
+
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        max-width: 100%;
+        font-family: 'Roboto', sans-serif; ;
+        color: white; 
+    }
+    img{
+        width: 100%;
+
+    }
+        
+    .nav{
+    display: flex;
+    background: transparent;
+    justify-content: space-between;  
+    align-items: center;
+    color: white;
+    position: fixed;
+    top:0;
+    overflow: auto;
+    width: 100%;
+    }
+
+    .nav ol{
+        display: flex;  
+        list-style: none;
+    }
+    .nav ol li{
+        padding:10px 10px;
+        transition: all 0.5s;
+        font-weight: bold;
+        padding-right: 20px;
+        font-size: 13px;
+    }
+    .nav li:hover{
+        background-color: grey;
+        border-radius: 10px;
+    }
+
+        @media (max-width=821px) {
+            .nav li{
+            display: none;
+            }
+        }
+    
+    .container{
+        text-align: center;
+        height: 100vh;
+        background: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/d0cecbbf-1a20-4b48-b136-fb096af19515/bvlatuR/std/2880x1800/model-3-main-hero-a-desktop') no-repeat center/cover ;  
+        object-fit: cover;
+        align-items: center;
+        position: relative;
+    }
+    @media (max-width:821px){
+        .container{
+        height: 90vh;
+    }
+}  
+
+    .container h1{
+        text-align: center;    
+    }
+    
+    .menu{
+        margin-right: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .mini-nav{
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    color: grey;
+    position: fixed;
+    top:20%;
+    left: 20px;
+    font-size: 24px;
+    }
+    .mini-nav ol{
+        list-style: none;
+        margin-left: 20px;
+        z-index: 2;
+    }
+    .mini-nav ol li{
+        padding-top:10px;
+        list-style: none;
+        transition: all 0.5s;
+    }
+    .mini-nav span{
+        color: grey;
+    }
+
+    .mini-nav span:hover{
+        color: black;
+    }
+    
+    @media (max-width:821px){
+        body{
+            max-width: 100%;
+        }
+        html{
+            height: 80vh;
+        }
+         .items ol li{
+             font-size: 3vw;
+             width: 33%;
+             }
+             .items button{
+                 width: 80%;
+                 margin: auto;
+             }
+
+        .content ol li{
+            font-size: 4vw;
+
+        }
+        .mini-nav{
+            display: none;
+        }
+}
+
+.model{
+    text-align: center;
+}
+.container .content {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    justify-content: space-between; 
+    align-items: center;
+    height: 100%; 
+    color: white;
+
+}
+.container .content h1{
+    margin-top: 15vh;
+}
+.container .content button{
+    margin-bottom: 10px;
+}
+
+
+.items ol{
+        display: flex;  
+        list-style: none;
+        flex-wrap: wrap;
+}
+.items ol li{
+    font-size: 22px;
+        padding:10px 10px;
+}
+.items button{
+        display: inline-block;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 50px;
+        padding: 1px 40px;
+        background-color: transparent;
+        color:white;
+        transition: all 1s;
+        padding-left: 40px;
+        font-size: 16px;
+        margin-top: 12px;
+    }
+    .items button:hover{
+        background-color: white;
+        color: black;
+    }
+
+.logo{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.message{
+    position: fixed;
+    right: 5%;
+    top: 91%;
+    border-radius: 50%;
+    padding: 6px;
+    color: black;
+    background-color: white;
+}
+    .message:hover{
+        color: black;
+    }
+
+    .learn{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+   
+    @media (min-width:820px) {
+        .learn5{
+            width: 40%;
+        }
+        
+    }
+
+    .Order1{
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 50px;
+        padding: 1px 40px;
+        background-color: transparent;
+        color:black;
+        transition: all 1s;
+        padding-left: 40px;
+        font-size: 14px;
+        width: fit-content;
+        display: inline-block;
+        
+    }
+    .Order1:hover{
+        background-color: black;
+        color: white;
+    }
+    .learn .icon1 {
+        width:45%;
+        color: black;
+        background: white;
+        margin-left: 10px;
+    }
+
+    .learn .icon1 i{
+        font-weight: light;
+        line-height: 1 rem;
+        color: white;
+        background: black;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+    .learn .icon1 i:hover {
+        color: black;
+        background: white;
+    }
+   
+
+    /* .redcar{
+        background: url(./img/lhd-performance-hero-desktop.jfif) no-repeat center center;
+        height: 130vh;
+        max-width: 100%;
+    } */
+    .items1{
+        display: flex;
+         flex-direction: column;
+         background: transparent;
+         justify-content: end; 
+         align-items: center;
+         height: 120vh; 
+         color: white;
+         text-align: center;
+         font-size: 12px;
+    }
+
+
+        .items1 ol li{
+        padding:10px 10px;
+}
+
+         .items1 ol{
+        display: flex;  
+        list-style: none;   
+}
+        .third{
+         color: black;
+         display: flex;
+         width: 100%;
+         flex-wrap: wrap;
+}
+.third .performance{
+    width: 400px;
+    margin-top: 5px;
+}   
+.third .exp{
+    width: 800px;
+    margin: auto;
+}
+.third h2{
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1rem;
+}
+h3{
+    font-size: 20px;
+}
+.arrow{
+    color:white;
+    font-weight: bold;
+}
+@media (max-width:821px){
+    body{
+        max-width: 100%;
+    }
+    .arrow{
+        display: none;  
+    }
+}
+.flex-columns{
+    height: 95vh;
+}
+.flex-columns .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    color: black;
+
+}
+
+.flex-columns .col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100%;   
+    flex:1;
+    ;
+}
+    .col2 h4{
+        margin-top: 20px;
+    }
+    .flex-columns .col2 {
+        width: fit-content;
+        margin-left: 30%;
+    }
+    .flex-columns .col1{
+        margin-left: 50px;
+        max-width: 100%;
+
+    }
+   
+.flex-columns .col .col1,
+.flex-columns .col .col2 {
+    height: 100%;
+
+}
+
+.flex-columns img{
+    width: 100%;
+    height: 100%;
+    }
+.flex-columns .col2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+@media (max-width:821px) {
+    .flex-columns {
+        height: 80vh;
+    }
+    .flex-columns .col{
+        flex:100%;
+        max-width: 100%;
+    }
+    .nav ol{
+        display: none;
+    }
+    .nav .logo{
+        display: none;
+    }
+    .flex-columns .col2{
+        margin-left: 0.5%;
+    }
+}
+
+.mini-menu {
+    color: white;
+    font-family:'Roboto', sans-serif; 
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;  
+    overflow: auto;
+    position: fixed;
+
+}
+.mini-menu .mini{
+    list-style: none;
+    display: flex;
+    transition: all 0.5s;
+    padding: 10px;
+}
+    .mini:hover{
+        background-color: grey;
+        border-radius: 10px;
+    }
+@media (min-width:821px) {
+    .mini-menu{
+        display: none;
+    }
+
+    
+}
+
+.redcar .items1{
+    display: flex;
+   
+    background: transparent;
+    
+    align-items: center;
+    
+    color: white;
+
+}
+.items1 ol{
+        display: flex;  
+        list-style: none;
+      
+}
+.items1 ol li{
+    font-size: 16px;
+    padding:10px 10px;
+}
+
+
+
+.third .row1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    color: black;
+}
+
+.third .col3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100%;   
+    flex:1;
+}
+    .exp p{
+        margin-top: 0px;   
+        max-width: 100%;
+    }
+   
+    .third .performance{
+        width: 50%;
+        margin-left: 9%;
+    }
+    .third .col .performance,
+    .third .col .exp {
+    height: 100%;
+}
+
+.third .exp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.learn5{
+        display: flex;
+        align-items: center;
+        width: 40%;
+        margin-left: 2%;
+    }
+
+.learn5 .icon1 {
+        width:45%;
+        color: black;
+        background: white;
+        margin-left: 10px;
+    }
+
+    .learn5 .icon1 i{
+        font-weight: light;
+        line-height: 1 rem;
+        color: white;
+        background: black;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+    .learn5 .icon1 i:hover {
+        color: black;
+        background: white;
+    }
+
+@media (max-width:821px) {
+    .third {
+        height: fit-content;
+        margin-left: 1%;
+        
+    }
+    .third .col3{
+        flex:100%;
+        max-width: 100%;
+        margin-left: 1%;
+    }
+    .third .exp{
+        margin-left: 0%;
+        max-width: 95%;
+    }
+    .third .performance{
+       margin-left: 2%;
+    }
+    .learn5{
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+}
+
+.scroll{
+    position: fixed;
+    right: 20px;
+    top:50px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color: black;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: transparent;
+  color: lightgrey;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 105%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
